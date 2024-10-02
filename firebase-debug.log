@@ -1,0 +1,142 @@
+[debug] [2024-09-27T13:16:39.167Z] ----------------------------------------------------------------------
+[debug] [2024-09-27T13:16:39.170Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-09-27T13:16:39.171Z] CLI Version:   13.20.0
+[debug] [2024-09-27T13:16:39.171Z] Platform:      win32
+[debug] [2024-09-27T13:16:39.171Z] Node Version:  v20.15.1
+[debug] [2024-09-27T13:16:39.171Z] Time:          Fri Sep 27 2024 16:16:39 GMT+0300 (East Africa Time)
+[debug] [2024-09-27T13:16:39.171Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-09-27T13:16:39.239Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-09-27T13:16:39.240Z] > authorizing via signed-in user (hiwottake1411@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\HP\Desktop\Evangadi\Phase 4\Project-2\amazon-clone
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-09-27T13:16:48.221Z] Using project from CLI flag: netflix-clone-2024-79f20
+[debug] [2024-09-27T13:16:48.223Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/netflix-clone-2024-79f20 [none]
+[debug] [2024-09-27T13:16:53.447Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/netflix-clone-2024-79f20 200
+[debug] [2024-09-27T13:16:53.448Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/netflix-clone-2024-79f20 {"projectId":"netflix-clone-2024-79f20","projectNumber":"563890530990","displayName":"amazon-clone","name":"projects/netflix-clone-2024-79f20","resources":{"hostingSite":"netflix-clone-2024-79f20"},"state":"ACTIVE","etag":"1_b5dc046e-5402-4e56-8352-4abefc5c132b"}
+[info] i  Using project netflix-clone-2024-79f20 (amazon-clone) 
+[info] 
+=== Functions Setup
+[debug] [2024-09-27T13:16:53.457Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-09-27T13:16:53.458Z] > authorizing via signed-in user (hiwottake1411@gmail.com)
+[debug] [2024-09-27T13:16:53.458Z] [iam] checking project netflix-clone-2024-79f20 for permissions ["firebase.projects.get"]
+[debug] [2024-09-27T13:16:53.458Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflix-clone-2024-79f20:testIamPermissions [none]
+[debug] [2024-09-27T13:16:53.458Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflix-clone-2024-79f20:testIamPermissions x-goog-quota-user=projects/netflix-clone-2024-79f20
+[debug] [2024-09-27T13:16:53.458Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflix-clone-2024-79f20:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-09-27T13:16:58.908Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflix-clone-2024-79f20:testIamPermissions 200
+[debug] [2024-09-27T13:16:58.909Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflix-clone-2024-79f20:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-09-27T13:16:58.909Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/netflix-clone-2024-79f20/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-09-27T13:16:58.910Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/netflix-clone-2024-79f20/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/netflix-clone-2024-79f20
+[debug] [2024-09-27T13:16:58.911Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/netflix-clone-2024-79f20/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-09-27T13:16:58.911Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/netflix-clone-2024-79f20/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/netflix-clone-2024-79f20
+[debug] [2024-09-27T13:17:04.311Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/netflix-clone-2024-79f20/services/cloudfunctions.googleapis.com 200
+[debug] [2024-09-27T13:17:04.311Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/netflix-clone-2024-79f20/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2024-09-27T13:17:04.375Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/netflix-clone-2024-79f20/services/runtimeconfig.googleapis.com 200
+[debug] [2024-09-27T13:17:04.375Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/netflix-clone-2024-79f20/services/runtimeconfig.googleapis.com [omitted]
+[info] 
+Detected existing codebase(s): default
+
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[debug] [2024-09-27T13:19:07.085Z] ----------------------------------------------------------------------
+[debug] [2024-09-27T13:19:07.087Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-09-27T13:19:07.088Z] CLI Version:   13.20.0
+[debug] [2024-09-27T13:19:07.088Z] Platform:      win32
+[debug] [2024-09-27T13:19:07.088Z] Node Version:  v20.15.1
+[debug] [2024-09-27T13:19:07.088Z] Time:          Fri Sep 27 2024 16:19:07 GMT+0300 (East Africa Time)
+[debug] [2024-09-27T13:19:07.088Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-09-27T13:19:07.165Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-09-27T13:19:07.165Z] > authorizing via signed-in user (hiwottake1411@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\HP\Desktop\Evangadi\Phase 4\Project-2\amazon-clone
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-09-27T13:19:14.816Z] Using project from CLI flag: netflix-clone-2024-79f20
+[debug] [2024-09-27T13:19:14.818Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/netflix-clone-2024-79f20 [none]
+[debug] [2024-09-27T13:19:20.402Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/netflix-clone-2024-79f20 200
+[debug] [2024-09-27T13:19:20.402Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/netflix-clone-2024-79f20 {"projectId":"netflix-clone-2024-79f20","projectNumber":"563890530990","displayName":"amazon-clone","name":"projects/netflix-clone-2024-79f20","resources":{"hostingSite":"netflix-clone-2024-79f20"},"state":"ACTIVE","etag":"1_b5dc046e-5402-4e56-8352-4abefc5c132b"}
+[info] i  Using project netflix-clone-2024-79f20 (amazon-clone) 
+[info] 
+=== Functions Setup
+[debug] [2024-09-27T13:19:20.413Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-09-27T13:19:20.413Z] > authorizing via signed-in user (hiwottake1411@gmail.com)
+[debug] [2024-09-27T13:19:20.413Z] [iam] checking project netflix-clone-2024-79f20 for permissions ["firebase.projects.get"]
+[debug] [2024-09-27T13:19:20.413Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflix-clone-2024-79f20:testIamPermissions [none]
+[debug] [2024-09-27T13:19:20.413Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflix-clone-2024-79f20:testIamPermissions x-goog-quota-user=projects/netflix-clone-2024-79f20
+[debug] [2024-09-27T13:19:20.413Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflix-clone-2024-79f20:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-09-27T13:19:25.796Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflix-clone-2024-79f20:testIamPermissions 200
+[debug] [2024-09-27T13:19:25.796Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflix-clone-2024-79f20:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-09-27T13:19:25.796Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/netflix-clone-2024-79f20/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-09-27T13:19:25.797Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/netflix-clone-2024-79f20/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/netflix-clone-2024-79f20
+[debug] [2024-09-27T13:19:25.798Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/netflix-clone-2024-79f20/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-09-27T13:19:25.798Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/netflix-clone-2024-79f20/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/netflix-clone-2024-79f20
+[debug] [2024-09-27T13:19:33.783Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/netflix-clone-2024-79f20/services/runtimeconfig.googleapis.com 200
+[debug] [2024-09-27T13:19:33.784Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/netflix-clone-2024-79f20/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-09-27T13:19:33.790Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/netflix-clone-2024-79f20/services/cloudfunctions.googleapis.com 200
+[debug] [2024-09-27T13:19:33.790Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/netflix-clone-2024-79f20/services/cloudfunctions.googleapis.com [omitted]
+[info] 
+Detected existing codebase(s): default
+
+[info] 
+Overwriting codebase default...
+
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/index.js 
+[info] +  Wrote functions/.gitignore 
+[info] 
+[info] i  Writing configuration info to firebase.json... 
+[info] i  Writing project information to .firebaserc... 
+[info] 
+[info] +  Firebase initialization complete! 
+[debug] [2024-09-27T13:21:50.486Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:268:49)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[error] 
+[error] Error: An unexpected error has occurred.
